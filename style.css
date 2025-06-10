@@ -219,24 +219,13 @@ img{
 
 .psg{
     display: flex;
-    background-color: #061840;
+    background-color: #61040F;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
     gap: 30px;
 }
 
-.f1{
-    background-color: #B12322;
-}
-
-.f3{
-    background-color: #C3A34D;
-}
-
-.f4{
-    background-color: #003C75;
-}
 
 .barca{
     display: flex;
@@ -245,7 +234,33 @@ img{
     border-radius: 30px;
 }
 
-.cont7{
+
+.FCB {
+    background-color:#A2214B ;
+}
+
+.FCB2 {
+    background-color: #00529F;
+}
+
+.PSG{
+    background-color:#08083A;
+}
+
+.PSG2{
+    background-color: #AA1501;
+}
+
+
+.cont5{
+    flex: 2;
+    min-width:310px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cont6{
     flex: 4;
     min-width:310px;
     border-radius: 20px;
@@ -253,28 +268,28 @@ img{
     transition: transform 0.3s ease;
 }
 
-.cont8{
-    flex: 2;
-    display: flex;
-    min-width: 310px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.img1{
+    width: 70%;
+    height: 200px;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-
-.img3{
-    width: 100%;
-    max-width: 750px; 
-    height: auto;
+.img2{
+    width: 90%;
+    height: 225px;
     border-radius: 20px;
-}
+}  
 
 .img4{
-    height: 100%;
-    width: 250px;
+    height: 90%;
+    width: 200px;
+}
+
+.LY, .letrafcb{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.futbol{
+    color: #fff;
 }
