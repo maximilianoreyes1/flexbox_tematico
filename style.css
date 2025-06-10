@@ -116,7 +116,7 @@ h1{
 
 .tarjeta{
     flex: 1 1 250px;
-    min-width: 320px;
+    min-width: 100px;
     padding: 40px;
     border-radius: 10px;
     background-color: #fff;
@@ -126,7 +126,7 @@ h1{
 }
 
 .tarjeta2{
-    flex: 1 1 100px;
+    flex: 1 1 250px;
     min-width: 100px;
     padding: 40px;
     border-radius: 10px;
@@ -250,6 +250,14 @@ h1{
     flex-direction: column;
 }
 
+.FCB3 {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color:#A2214B ;
+    flex-direction: column;
+}
+
 .PSG{
     background-color:#08083A;
 }
@@ -297,7 +305,7 @@ h1{
 
 .img4{
     height: 90%;
-    width: 200px;
+    width: 150px;
 }
 
 .LY, .letrafcb{
