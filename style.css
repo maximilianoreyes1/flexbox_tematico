@@ -114,7 +114,18 @@ h1{
     width: 100%;
 }
 
-.tarjeta {
+.tarjeta{
+    flex: 1 1 250px;
+    min-width: 320px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta2{
     flex: 1 1 100px;
     min-width: 100px;
     padding: 40px;
@@ -130,12 +141,6 @@ h1{
 
 .tarjeta:hover{
     transform: scale(1.04);
-}
-
-img{
-    width: 100px;
-    border-radius: 10px;   
-    height: 100px;
 }
 
 .imgb1{
@@ -226,21 +231,23 @@ img{
     gap: 30px;
 }
 
-
 .barca{
     display: flex;
     background-color: #061840;
     justify-content: center;
     border-radius: 30px;
+    flex-wrap: nowrap;
 }
 
 
 .FCB {
     background-color:#A2214B ;
+    flex-direction: column;
 }
 
 .FCB2 {
     background-color: #00529F;
+    flex-direction: column;
 }
 
 .PSG{
@@ -248,7 +255,9 @@ img{
 }
 
 .PSG2{
+    font-size: 15px;
     background-color: #AA1501;
+    flex-direction: column;
 }
 
 
@@ -269,8 +278,8 @@ img{
 }
 
 .img1{
-    width: 70%;
-    height: 200px;
+    width: 75%;
+    height: 90%;
 }
 
 .img2{
@@ -278,6 +287,13 @@ img{
     height: 225px;
     border-radius: 20px;
 }  
+
+.img3{
+    width: 100%;
+    max-width: 750px; 
+    height: auto;
+    border-radius: 20px;
+}
 
 .img4{
     height: 90%;
