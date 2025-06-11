@@ -2,56 +2,75 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: solid 1px red;
+    /*outline: solid 1px red;*/
 }
 
 body {
     font-family: "Courier New", monospace;
-    background-color: #f2f4f8;
+    background-color: #f4f4f4; /* gris claro */
 }
 
 .contenedor {
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
 }
 
 /* NAV FIJA */
 .nav {
-    background-color: #37474f;
-    color: white;
-    width: 20%;
-    height: 100vh;
     position: fixed;
-    min-width: 180px;  /* evita que se haga muy pequeño */
-    max-width: 280px;  /* evita que se haga muy grande */
     top: 0;
     left: 0;
-    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    background-color: #1a1a2e; /* Azul oscuro coherente */
+    padding: 20px 20px;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 4px solid #ffcc00;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
+
 .nav h2 {
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffcc00;
+    margin: 0;
 }
 
 .nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.nav li {
-    margin: 10px 0;
+.nav ul li {
+    background-color: #29304d;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: default;
+    transition: background-color 0.3s ease;
 }
 
-.nav a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+.nav ul li:hover {
+    background-color: #3e4a6b;
 }
 
-.nav a:hover {
-    color: #ffd54f;
-}
 
 .area-principal {
+    background-color: #1a1a2e;
     flex: 1;
     padding: 40px 0px;
     display: flex;
@@ -59,15 +78,29 @@ body {
 }
 
 .contenido {
-    margin-left: 250px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.galeria{
+    padding-left: 15%;
+    margin-left: 6%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.galeria{
+    border-radius: 15px;
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basket{
+    background-color: #ffb339;
+}
+
+.fut{
+    background-color: #1B2A4B;
 }
 
 h1{
@@ -81,6 +114,9 @@ h1{
     flex-wrap: wrap;
     gap: 25px;
     margin: 25px 50px;
+    flex: 1 1 100%;
+    margin: 25px auto;
+    width: 100%;
 }
 
 .c_flex{
@@ -127,7 +163,7 @@ h1{
 
 .tarjeta2{
     flex: 1 1 250px;
-    min-width: 100px;
+    min-width: 0;
     padding: 40px;
     border-radius: 10px;
     background-color: #fff;
@@ -140,6 +176,10 @@ h1{
 }
 
 .tarjeta:hover{
+    transform: scale(1.04);
+}
+
+.tarjeta2:hover{
     transform: scale(1.04);
 }
 
@@ -316,4 +356,9 @@ h1{
 
 .futbol{
     color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
