@@ -1,3 +1,4 @@
+/* ELEMENTOS QUE AFECTAN A TODA LA PÁGINA */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,12 +6,10 @@
     /*outline: solid 1px red;*/
 }
 
+/* ELEMENTOS DEL BODY */
 body {
     font-family: "Courier New", monospace;
     background-color: #f4f4f4; /* gris claro */
-}
-
-.contenedor {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -21,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 20%;
     height: 100vh;
     background-color: #1a1a2e; /* Azul oscuro coherente */
     padding: 20px 20px;
@@ -68,7 +67,7 @@ body {
     background-color: #3e4a6b;
 }
 
-
+/*ÁREA PRINCIPAL DE LA PÁGINA*/
 .area-principal {
     background-color: #1a1a2e;
     flex: 1;
@@ -77,6 +76,7 @@ body {
     justify-content: center;
 }
 
+/*CONTENIDO DENTRO DEL AREA PRINCIPAL*/
 .contenido {
     padding-left: 15%;
     margin-left: 6%;
@@ -87,6 +87,7 @@ body {
     max-width: 1200px;
 }
 
+/*ELEMENTOS DE LAS 2 GALERIAS*/
 .galeria{
     border-radius: 15px;
     padding: 15px 50px;
@@ -95,18 +96,21 @@ body {
     gap: 20px;
 }
 
+/*COLOR DE LA GALERIA DE BASKET*/
 .basket{
     background-color: #ffb339;
 }
 
+/*COLOR DE LA GALERIA DE FUTBOL*/
 .fut{
     background-color: #1B2A4B;
 }
 
-h1{
-    flex: 1;
+.fut h1{
+    color: #FFFFFF;
 }
 
+/*CONTENIDO DE LAS SUB-GALERIAS*/
 .sub-galeria {
     border-radius: 10px;
     padding: 25px;
@@ -119,12 +123,7 @@ h1{
     width: 100%;
 }
 
-.c_flex{
-    flex-direction: column;
-    display: flex;
-    gap: 20px;
-}
-
+/*SUB GALERIA DE LOS CELTICS*/
 .celtics{
     display: flex;
     background-color: #058C54;
@@ -132,6 +131,7 @@ h1{
     justify-content: center;
 }
 
+/*SUB GALERIA DE LOS LAKERS*/
 .lakers{
     display: flex;
     background-color: #552583;
@@ -139,17 +139,71 @@ h1{
     justify-content: center;
 }
 
+/*SUB GALERIA DEL PSG*/
+.psg{
+    display: flex;
+    background-color: #61040F;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+/*SUB GALERIA DEL BARCA*/
+.barca{
+    display: flex;
+    background-color: #061840;
+    justify-content: center;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+}
+
+/*CONTENEDORES FLEXIBLES (CONTENEDORES DE LAS TARJETAS)*/
+.c_flex{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
 .cont2 {
     display: flex;
     width: 100%;
     flex: 1;
 }
+
+.cont3{
+    flex: 5;
+    display: flex;
+}
+
+.cont4{
+    display: flex;
+    flex: 3;
+}
+
+.cont5{
+    flex: 2;
+    min-width:310px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cont6{
+    flex: 4;
+    min-width:310px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
 .datos_equipos1 {
     display: flex;
     gap: 30px;
     width: 100%;
 }
 
+/*CONTENIDO DE LAS TARJETAS*/
 .tarjeta{
     flex: 1 1 250px;
     min-width: 100px;
@@ -163,7 +217,6 @@ h1{
 
 .tarjeta2{
     flex: 1 1 250px;
-    min-width: 0;
     padding: 40px;
     border-radius: 10px;
     background-color: #fff;
@@ -175,6 +228,7 @@ h1{
     transition: transform 0.3s ease;
 }
 
+/*ANIMACIÓN DE LAS TARJETAS*/
 .tarjeta:hover{
     transform: scale(1.04);
 }
@@ -183,11 +237,58 @@ h1{
     transform: scale(1.04);
 }
 
+/*AJUSTES DE TODAS LAS IMAGENES */
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
 .imgb1{
     width: 155px;
     height: 155px;
 }
 
+.imgb2{
+    width: 100%;
+    height: 150px;
+}
+
+.imgb3{
+    width: 290px;
+    height: 150px;
+}
+
+.imgb4{
+    width: 90%;
+    height: 80%;
+}
+
+.img1{
+    width: 75%;
+    height: 90%;
+}
+
+.img2{
+    width: 90%;
+    height: 225px;
+    border-radius: 20px;
+}  
+
+.img3{
+    width: 100%;
+    max-width: 750px; 
+    height: auto;
+    border-radius: 20px;
+}
+
+.img4{
+    height: 60%;
+    width: 150px;
+}
+
+
+/* TARJETAS */
 .celt1{
     background-color: #DDE4DD;
 }
@@ -202,29 +303,10 @@ h1{
     background-color: #3C3C3C;
 }
 
-.bold{
-    font-weight: bold;
-}
-
 .celt4{
     font-size: 18px;
     background-color: #A63732;
     color: #F5E6DC;
-}
-
-.imgb2{
-    width: 100%;
-    height: 150px;
-}
-
-.cont3{
-    flex: 5;
-    display: flex;
-}
-
-.cont4{
-    display: flex;
-    flex: 3;
 }
 
 .lak1{
@@ -252,37 +334,11 @@ h1{
     padding: 10px;
 }
 
-.imgb3{
-    width: 290px;
-    height: 150px;
-}
-
-.imgb4{
-    width: 90%;
-    height: 80%;
-}
-
-.psg{
-    display: flex;
-    background-color: #61040F;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    gap: 30px;
-}
-
-.barca{
-    display: flex;
-    background-color: #061840;
-    justify-content: center;
-    border-radius: 30px;
-    flex-wrap: nowrap;
-}
-
-
 .FCB {
     background-color:#A2214B ;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .FCB2 {
@@ -293,9 +349,9 @@ h1{
 .FCB3 {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0;
     background-color:#A2214B ;
-    flex-direction: column;
 }
 
 .PSG{
@@ -305,49 +361,12 @@ h1{
 .PSG2{
     font-size: 15px;
     background-color: #AA1501;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-
-.cont5{
-    flex: 2;
-    min-width:310px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.cont6{
-    flex: 4;
-    min-width:310px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.img1{
-    width: 75%;
-    height: 90%;
-}
-
-.img2{
-    width: 90%;
-    height: 225px;
-    border-radius: 20px;
-}  
-
-.img3{
-    width: 100%;
-    max-width: 750px; 
-    height: auto;
-    border-radius: 20px;
-}
-
-.img4{
-    height: 90%;
-    width: 150px;
-}
-
+/*CONFIGURACIÓN DE LETRAS*/
 .LY, .letrafcb{
     font-weight: bold;
     font-size: 20px;
@@ -358,7 +377,6 @@ h1{
     color: #fff;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.bold{
+    font-weight: bold;
 }
