@@ -40,7 +40,6 @@ body {
     width: 20%;
 }
 
-/* Agrupar y alinear bien el logo */
 .logo {
     display: flex;
     align-items: center;
@@ -48,7 +47,6 @@ body {
     overflow: hidden;
 }
 
-/* Al hacer hover, permitir mostrar el texto completo */
 .nav:hover .logo {
     overflow: visible;
 }
@@ -59,10 +57,9 @@ body {
     gap: 10px;
     white-space: nowrap;
     overflow: hidden;
-    justify-content: center;
+    justify-content: start;
 }
 
-/* Mostrar el texto completo al hacer hover */
 .nav:hover .menu-lateral li {
     overflow: visible;
 }
