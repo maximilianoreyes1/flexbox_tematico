@@ -25,14 +25,12 @@ body {
     background-color: #1a1a2e;
     padding: 20px 20px;
     color: #ffffff;
-    font-family: 'Courier New', monospace;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     border-right: 4px solid #ffcc00;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
     transition: width  0.4s ease;
 }
 
@@ -188,6 +186,7 @@ body {
 .c_flex{
     flex-direction: column;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
