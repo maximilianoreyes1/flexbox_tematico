@@ -223,6 +223,14 @@ body {
     transition: transform 0.3s ease;
 }
 
+.cont7{
+    flex: 2;
+}
+
+.cont8{
+    flex: 1;
+}
+
 .datos_equipos1 {
     display: flex;
     gap: 30px;
