@@ -9,7 +9,7 @@
 /* ELEMENTOS DEL BODY */
 body {
     font-family: "Courier New", monospace;
-    background-color: #1a1a2e; /* gris claro */
+    background-color: #1a1a2e;
     color: #eaeaea;
     display: flex;
     height: 100%;
